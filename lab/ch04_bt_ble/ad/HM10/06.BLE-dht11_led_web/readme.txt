@@ -1,0 +1,1 @@
+아두이노에서 측정한 DHT11 sendor data를 BLE를 통해서 RaspberryPi 로 전송

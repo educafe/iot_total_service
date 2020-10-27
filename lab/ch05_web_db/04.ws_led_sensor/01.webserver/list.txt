@@ -1,0 +1,2 @@
+<li><a href="http://raspberrypi.mshome.net/rp_ws/index.php?id=2">Led 제어</a></li>
+<li><a href="http://raspberrypi.mshome.net/rp_ws/index.php?id=3">Sensor 제어</a></li>

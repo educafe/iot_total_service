@@ -1,0 +1,52 @@
+btnon.enable{
+	background-color:yellow;
+	color:black;
+}
+btnon.disable{
+	background-color:gray;
+	color:black;
+}
+btnoff.enable{
+	background-color:yellow;
+	color:black;
+}
+btnoff.disable{
+	background-color:gray;
+	color:black;
+}
+header { 
+	border-bottom:1px solid gray;
+	padding:20px;
+}
+nav {
+	border-right:1px solid gray;
+	width:200px;
+	height:600px;
+	float:left;
+}
+nav ol {
+	list-style:none;
+	font-size:20px;
+	color:blue;
+	padding:10px;
+}
+article {
+	float:left;
+	padding:20px;
+}
+h3 {
+	font-size:30px;
+	color:red;
+}
+input{
+	width:100px;
+	height:50px;
+	margin:5px;
+}
+#control {
+	padding:70px;
+}
+header img {
+	float:right;
+	heigt:100px;
+}
