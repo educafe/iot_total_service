@@ -13,24 +13,22 @@
 char *bdaddr = "F0:C7:7F:ED:E4:2D";		//educafe MAC address
 char *uuid = "0000ffe1-0000-1000-8000-00805f9b34fb";
 	
-int led_onoff(int led_val) {
-	char tmp[128];
-	sprintf(tmp, "read_write %s write %s %d", bdaddr, uuid, led_val);
-	system(tmp);
-	printf("LED contrelled\n");
-	return 0;
-}
-
 int main(int argc, char *argv[]) {
 	int led_val;
+	int rst;
+	char tmp[128];
 
 	while(1) {
 		led_val='1';
-		led_onoff(led_val);
-		sleep(2);
+		sprintf(tmp, "/home/pi/iot_network/lab/ch05_web_db/04.ws_led_sensor/03.ws_ai_led/read_write \
+		%s write %s %d", bdaddr, uuid, led_val);
+		system(tmp);
+		sleep(1);
 		led_val='0';
-		led_onoff(led_val);
-		sleep(2);
+		sprintf(tmp, "/home/pi/iot_network/lab/ch05_web_db/04.ws_led_sensor/03.ws_ai_led/read_write \
+		%s write %s %d", bdaddr, uuid, led_val);
+		system(tmp);
+		sleep(1);
 	}
 	
 	return 0;
